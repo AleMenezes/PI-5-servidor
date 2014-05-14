@@ -175,7 +175,6 @@ void processaInfo(Lista *l){
     double varianciaAlpha = 0;
     double desvioPadraoAlpha = 0;
 
-    
     int i = 0;
     Elemento *e;
     for(e = l->comeco; i < qtePosicoesParaDisparo -1; e = e->proximo){

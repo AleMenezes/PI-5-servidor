@@ -25,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F60A254C190B1006000374B6 /* listaFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = listaFunctions.h; sourceTree = "<group>"; };
+		F6164A1E1911612E0079E7A8 /* structsBalistica.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = structsBalistica.h; sourceTree = "<group>"; };
 		F6FDCFE318D3D013001E76BB /* servidor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = servidor; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FDCFE618D3D013001E76BB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F6FDCFE818D3D013001E76BB /* servidor.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = servidor.1; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				F6FDCFE618D3D013001E76BB /* main.c */,
+				F60A254C190B1006000374B6 /* listaFunctions.h */,
+				F6164A1E1911612E0079E7A8 /* structsBalistica.h */,
 				F6FDCFE818D3D013001E76BB /* servidor.1 */,
 			);
 			path = servidor;
@@ -225,6 +229,7 @@
 				F6FDCFEE18D3D013001E76BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

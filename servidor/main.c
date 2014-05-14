@@ -174,7 +174,7 @@ void processaInfo(Lista *l){
     double alphaMedio = 0;                    // n - 1 angulos entre
     double varianciaAlpha = 0;
     double desvioPadraoAlpha = 0;
-    
+
     
     int i = 0;
     Elemento *e;

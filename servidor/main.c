@@ -49,7 +49,8 @@ sem_t semaforo;
 
 void *threadDeDisparo (void *p);
 void processaInfo(Lista *l);
-int abreComunicacao();
+int quadranteRelativoXY(Posicao *referencia, Posicao *objeto);
+double findAzinute(Objeto *referencia, Objeto *relativo);
 void printPosicao(Posicao *pos);
 void printVelocidade(Vetor *vel);
 
@@ -298,7 +299,7 @@ void processaInfo(Lista *l){
     double velXY = sqrt( pow(projetil.velocidade.x, 2) + pow(projetil.velocidade.y, 2) );
     
     pthread_mutex_lock(&server_mutex);
-    disparo.azinute  = atan( projetil.velocidade.x/projetil.velocidade.y);
+    disparo.azinute  = findAzinute(&projetil, &inimigo);
     disparo.elevacao = atan( (projetil.velocidade.z)/(velXY));
     disparo.velDisparo = velProjetil;
     disparo.instante = instanteDisparo;
@@ -314,6 +315,46 @@ void processaInfo(Lista *l){
     return ;
 }
 
+double findAzinute(Objeto *referencia, Objeto *relativo){
+    double angulo = atan( fabs(referencia->velocidade.x)/ fabs(referencia->velocidade.y));
+    
+    switch ( quadranteRelativoXY(&referencia->pos, &relativo->pos) ) {
+        case 1:
+            return angulo*(-1.0);
+        case 2:
+            return angulo;
+        case 3:
+            return M_PI - angulo;
+        case 4:
+            return (M_PI - angulo)*(-1.0);
+        default:
+            return angulo;
+    }
+}
+
+int quadranteRelativoXY(Posicao *referencia, Posicao *objeto){
+    //verifica em qual quadrante esta o aviao para definir em qual direcao o mesmo deve voar
+    if (referencia->x < objeto->x) { // ta no quad 2 ou 3
+        if (referencia->y < objeto->y ) {
+            //quad 3
+            return 3;
+        }
+        else{
+            //quad 2
+            return 2;
+        }
+    }
+    else{ //ta no quad 1 ou 4
+        if (referencia->y < objeto->y ) {
+            //quad 4
+            return 4;
+        }
+        else{
+            //quad 1
+            return 1;
+        }
+    }
+}
 
 void printPosicao(Posicao *pos){
     printf("p.x: %0.1f  p.y: %0.1f p.z: %0.1f \n", pos->x, pos->y, pos->z);

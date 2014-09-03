@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F04EC029-C237-434D-9FD4-4B336D3BB3D6</string>
+	<string>F69AE623-0EB4-4DB9-ADF9-FEAABC8074D3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>servidor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>530033DD-C1BA-4FE7-91D4-53A60F17567F</key>
-		<string>https://github.com/AleMenezes/servidor.git</string>
+		<key>D6218D2B-1A1B-4672-9DA4-38886CCFDB49</key>
+		<string>https://github.com/AleMenezes/PI-5-servidor.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>servidor.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>530033DD-C1BA-4FE7-91D4-53A60F17567F</key>
+		<key>D6218D2B-1A1B-4672-9DA4-38886CCFDB49</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AleMenezes/servidor.git</string>
+	<string>https://github.com/AleMenezes/PI-5-servidor.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>530033DD-C1BA-4FE7-91D4-53A60F17567F</string>
+	<string>D6218D2B-1A1B-4672-9DA4-38886CCFDB49</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>530033DD-C1BA-4FE7-91D4-53A60F17567F</string>
+			<string>D6218D2B-1A1B-4672-9DA4-38886CCFDB49</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PI-5-servidor</string>
 		</dict>
